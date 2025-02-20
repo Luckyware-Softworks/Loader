@@ -1,6 +1,19 @@
 {
     "robloxLsp.diagnostics.globals": [
         "key",
-        "script_key"
+        "script_key",
+        "getgenv",
+        "request",
+        "HttpService",
+        "setclipboard",
+        "cloneref",
+        "http_request",
+        "syn",
+        "http",
+        "clonereference",
+        "makefolder",
+        "isfile",
+        "readfile",
+        "writefile"
     ]
 }

@@ -63,9 +63,17 @@ local Input = Tabs.Main:AddInput("Key", {
 })
 
 Tabs.Main:AddButton({
-	Title = "Get Key",
+	Title = "Get Key (Linkvertise)",
 	Callback = function()
 		setclipboard("https://ads.luarmor.net/get_key?for=Luckyware-rIRHwoqvHliI")
+		notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
+	end,
+})
+
+Tabs.Main:AddButton({
+	Title = "Get Key (Lootlabs)",
+	Callback = function()
+		setclipboard("https://ads.luarmor.net/get_key?for=Luckyware-XPVqjPRiCpqH")
 		notify("Copied To Clipboard", "Ad Reward Link has been copied to your clipboard", 16)
 	end,
 })

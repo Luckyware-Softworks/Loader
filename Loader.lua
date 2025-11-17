@@ -88,7 +88,7 @@ Tabs.Main:AddButton({
 Tabs.Main:AddButton({
 	Title = "Join Discord",
 	Callback = function()
-		setclipboard("https://discord.gg/Luckyware")
+		setclipboard("https://discord.gg/hKSpy8495M")
 		notify("Copied To Clipboard", "Discord Server Link has been copied to your clipboard", 16)
 		Request({
 			Url = "http://127.0.0.1:6463/rpc?v=1",

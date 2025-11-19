@@ -130,7 +130,7 @@ Tabs.Main:AddButton({
 Tabs.Main:AddButton({
 	Title = "Join Discord",
 	Callback = function()
-		setclipboard(Discord_Invite)
+		setclipboard("https://discord.gg/" .. Discord_Invite)
 		notify("Copied To Clipboard", "Discord Server Link has been copied to your clipboard", 16)
 		Request({
 			Url = "http://127.0.0.1:6463/rpc?v=1",
@@ -143,3 +143,4 @@ Tabs.Main:AddButton({
 
 Window:SelectTab(1)
 notify(Hub, "Loader Has Loaded Successfully")
+

@@ -2,9 +2,8 @@ repeat
 	task.wait()
 until game:IsLoaded()
 
--- Replace These Variables
 local Hub = "Luckyware"
-local Hub_Script_ID = "58b52abb25606af68adcd5c0ce248c92"
+local Hub_Script_ID = "20efe85b3452d1fa0feb38ce30bbad53"
 local Discord_Invite = "hKSpy8495M"
 local UI_Theme = "Dark"
 
@@ -19,9 +18,8 @@ local PlaceIDs = {
 	["8304191830"] = "0bd8fd6455fc4e4e8453091023892b7c",
 	["18687417158"] = "58b52abb25606af68adcd5c0ce248c92",
 	["94845773826960"] = "69559f04bcb1949ddbea9b5e419520cd",
-	["6701277882"] = "20efe85b3452d1fa0feb38ce30bbad53"
+	["6701277882"] = "20efe85b3452d1fa0feb38ce30bbad53",
 }
--------------------------------------------
 
 makefolder(Hub)
 local key_path = Hub .. "/Key.txt"
@@ -144,4 +142,3 @@ Tabs.Main:AddButton({
 
 Window:SelectTab(1)
 notify(Hub, "Loader Has Loaded Successfully")
-

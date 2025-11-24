@@ -130,7 +130,7 @@ Tabs.Main:AddButton({
 	Title = "Permanent Key",
 	Callback = function()
 		setclipboard("https://discord.gg/" .. Discord_Invite)
-		notify("Copied To Clipboard", ".gg/" .. Discord_Invite, 16)
+		notify("Copied To Clipboard", "discord.gg/" .. Discord_Invite, 16)
 		Request({
 			Url = "http://127.0.0.1:6463/rpc?v=1",
 			Method = "POST",
@@ -144,11 +144,11 @@ Tabs.Main:AddButton({
 	Title = "Join Discord",
 	Callback = function()
 		setclipboard("https://discord.gg/" .. Discord_Invite)
-		notify("Copied To Clipboard", ".gg/" .. Discord_Invite, 16)
+		notify("Copied To Clipboard", "discord.gg/" .. Discord_Invite, 16)
 		Request({
 			Url = "http://127.0.0.1:6463/rpc?v=1",
 			Method = "POST",
-			Headers = { ["Content-Type"] = "application/json", ["origin"] = "https://discord.com" },
+			Headers = { ["Content-Type"] = "application/json", ["osrigin"] = "https://discord.com" },
 			Body = HttpService:JSONEncode({ args = { code = Discord_Invite }, cmd = "INVITE_BROWSER", nonce = "." }),
 		})
 	end,
